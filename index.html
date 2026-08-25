@@ -714,19 +714,19 @@ At the heart of our work is a bigger goal: contributing to food security, creati
         <h3>Quote Request Form</h3>
         <div class="sub">We'll route your enquiry to the right team.</div>
         <div class="form-row">
-          <div><label>Full name</label><input type="text" placeholder="Your name"></div>
-          <div><label>Phone / WhatsApp</label><input type="text" placeholder="+234"></div>
+          <div><label>Full name</label><input type="text" name="name" placeholder="Your name" required></div>
+          <div><label>Phone / WhatsApp</label><input type="text" name="phone" placeholder="+234" required></div>
         </div>
         <div class="form-row">
           <div><label>Enquiry type</label>
-            <select><option>Retail</option><option>Bulk / Wholesale</option><option>Investment / Partnership</option></select>
+            <select name="enquiry_type"><option>Retail</option><option>Bulk / Wholesale</option><option>Investment / Partnership</option></select>
           </div>
           <div><label>Product category</label>
-            <select><option>Poultry</option><option>Turkeys</option><option>Pullets</option><option>Fresh Produce</option></select>
+            <select name="product_category"><option>Poultry</option><option>Turkeys</option><option>Pullets</option><option>Fresh Produce</option></select>
           </div>
         </div>
         <div class="form-row full">
-          <div><label>Message</label><textarea placeholder="Tell us what you need, quantity, and delivery location"></textarea></div>
+          <div><label>Message</label><textarea name="message" placeholder="Tell us what you need, quantity, and delivery location"></textarea></div>
         </div>
         <button class="submit-btn" type="submit">Send Quote Request</button>
       </form>
