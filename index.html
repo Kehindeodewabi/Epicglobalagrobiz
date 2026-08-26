@@ -463,8 +463,8 @@
       display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;
       padding-bottom:10px;-webkit-overflow-scrolling:touch;
     }
-    .product-grid.scroller .card{min-width:62%;scroll-snap-align:start;flex-shrink:0;}
-    .product-grid.scroller .card-img{aspect-ratio:16/10;}
+    .product-grid.scroller .card{flex:0 0 62%;width:62%;scroll-snap-align:start;}
+    .product-grid.scroller .card-img{aspect-ratio:16/10;width:100%;}
     .product-grid.scroller::-webkit-scrollbar{display:none;}
   }
   @media(max-width:860px){
